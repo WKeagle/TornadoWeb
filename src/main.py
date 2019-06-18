@@ -1,5 +1,6 @@
 import tornado.ioloop
 import tornado.web
+from asynchronization import async_function
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
@@ -11,6 +12,7 @@ def make_app():
     ])
 
 if __name__ == "__main__":
-    app = make_app()
-    app.listen(8086)
-    tornado.ioloop.IOLoop.current().start()
+	async_function.test_func()
+    # app = make_app()
+    # app.listen(8086)
+    # tornado.ioloop.IOLoop.current().start()
