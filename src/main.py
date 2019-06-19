@@ -3,8 +3,6 @@ import tornado.web
 import sys
 from asynchronization import async_function
 
-sys.dont_write_bytecode = True
-
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.write("Hello, world! My name is Eagle.")

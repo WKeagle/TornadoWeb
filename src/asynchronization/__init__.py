@@ -1,6 +1,6 @@
-import sys
 from os.path import abspath, join, dirname, basename
 
+# sys.dont_write_bytecode = True
 # sys.path.insert(0, join(dirname(__file__)))
 
 if __name__ == "__main__":
