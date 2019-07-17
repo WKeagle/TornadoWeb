@@ -19,4 +19,5 @@ if __name__ == "__main__":
 	app = web.Application(handlers, settings)
 	http_server = httpserver.HTTPServer(app)
 	http_server.listen(9012)
-	ioloop.IOLoop.current().start()
+	ioloop.IOLoop.instance().current().start()
+	# ioloop.IOLoop.current().start()
